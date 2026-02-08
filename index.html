@@ -13,7 +13,7 @@
         body {
             background: #000;
             color: #fff;
-            font-family: -apple-system, BlinkMacSystemFont, 'Inter', sans-serif;
+            font-family: -apple-system, BlinkMacSystemFont, 'Inter', 'Segoe UI', sans-serif;
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -21,26 +21,66 @@
             min-height: 100vh;
             text-align: center;
             padding: 2rem;
+            position: relative;
+        }
+        .content {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
         }
         h1 {
-            font-size: 4rem;
+            font-size: 5rem;
             font-weight: 700;
-            letter-spacing: 0.05em;
-            margin-bottom: 1rem;
+            letter-spacing: 0.08em;
+            margin-bottom: 1.5rem;
         }
-        p {
-            font-size: 1.25rem;
+        .tagline {
+            font-size: 1.75rem;
+            font-weight: 400;
+            letter-spacing: 0.05em;
+            margin-bottom: 0.75rem;
+        }
+        .subtitle {
+            font-size: 1.1rem;
             font-weight: 300;
-            opacity: 0.7;
+            opacity: 0.8;
+            letter-spacing: 0.02em;
+        }
+        footer {
+            position: absolute;
+            bottom: 2rem;
+            font-size: 0.875rem;
+            font-weight: 300;
+            opacity: 0.6;
+            letter-spacing: 0.02em;
         }
         @media (max-width: 768px) {
-            h1 { font-size: 2.5rem; }
-            p { font-size: 1rem; }
+            h1 { 
+                font-size: 2.5rem; 
+                margin-bottom: 1rem;
+            }
+            .tagline { 
+                font-size: 1.25rem;
+                margin-bottom: 0.5rem;
+            }
+            .subtitle { 
+                font-size: 0.9rem; 
+            }
+            footer {
+                font-size: 0.75rem;
+                bottom: 1.5rem;
+            }
         }
     </style>
 </head>
 <body>
-    <h1>KAI DEFENSE</h1>
-    <p>Let freedom whisper</p>
+    <div class="content">
+        <h1>KAI DEFENSE</h1>
+        <p class="tagline">LET FREEDOM WHISPER.</p>
+        <p class="subtitle">Firearms Technology Research & Development</p>
+    </div>
+    <footer>© 2026 KAI DEFENSE LLC | All Rights Reserved</footer>
 </body>
 </html>
